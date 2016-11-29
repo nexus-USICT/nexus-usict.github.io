@@ -1,0 +1,38 @@
+<div class="container" >
+				<div class="parent-wrapper">
+					<div class="parent">
+						
+						<div ng-click="setClass(c)" ng-repeat="c in classData" class="card child waves-effect">
+							<div class="card-content">
+								 <span class="card-title ">{{classDetails[c]["code"]}}</span>
+            			 		 	<div class="card-title">{{classDetails[c]["subject_name"]}}</div>
+         
+							</div>
+							<div class="card-action">
+								<div class="card-text">{{c}}</div>
+							</div>
+							
+						</div>
+					
+					</div>
+				</div>
+
+				<div ng-show="isSet() && isAssignments()">
+				<div class="heading">ASSIGNMENTS</div>
+				<table>
+				<thead>
+				<tr><th>Due Date</th>
+
+				<th>Title</th></tr>
+				</thead>
+
+				<tbody>
+				<tr ng-repeat="c in getAssignments(curClass)">
+				
+				<td>{{c["due"]}}</td>
+				<td>{{c["title"]}}</td>
+				</tr>
+				</table>
+
+				</div>
+</div>

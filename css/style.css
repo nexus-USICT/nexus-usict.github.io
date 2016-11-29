@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Rambla:400,700|Viga');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+nav{
+	height: 50px !important;
+	line-height: 1;
+	font-family: Roboto;
+    padding-left: 1em;
+    padding-top: 0.15em;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    font-size: 3rem;
+    background: #0a3063;
+}
+
+.dashboard-nav{
+	 padding-left: 0em !important;
+	 padding-top: 0em !important;
+}
+.dashboard-bl{
+	padding-top: 0.3em !important
+}
+.width3{
+	width: 4% !important;
+}
+.login-box{
+margin-top: 6em;
+}
+
+.classes-box{
+margin-top: 4em;
+}
+
+
+.vertical-line {
+    border-left: thick solid #ff0000;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 2em;
+
+}
+
+.login-title{
+	padding-top: 1em;
+}
+
+.login-content{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 1.5em;
+	padding-top: 0.5em;
+}
+
+.assignment-content{
+	padding: 4em;
+}
+.submit-btn{
+	margin-left: 15em;
+}
+
+
+.btn, .btn:focus{
+	background-color: 		#a52121
+}
+
+.btn:hover{
+	background-color: #ab0000;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+footer{
+	 background: #0a3063 !important;
+	 box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2)
+}
+
+
+
+
+
+
+footer.page-footer {
+    margin-top: 0px !important;
+    padding: 0em !important;
+
+}
+
+footer.page-footer .footer-copyright{
+	line-height: 1 !important;
+}
+
+
+
+.footer-title{
+	font-family: "Lato";
+	font-size: 14px;
+}
+
+
+.drop-down-school{
+  
+   align-items: center;
+   min-height: 70vh;
+   background-image: url(../images/1.jpg);
+   background-size: cover;
+
+}
+
+.parent-wrapper {
+    height:100%;
+}
+.parent {
+    display: flex;
+    font-size: 0;
+    flex-wrap:wrap;
+    margin:-10px 0 0 -10px;
+}
+.child {
+    display: inline-block;
+    margin:10px 0 0 10px;
+    flex-grow: 1;   
+    width: calc(100% * (1/4) - 10px - 1px)
+}
+
+.card-text{
+	font-size:14px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.heading{
+        padding: 1em;
+    font-weight: 700;
+    color: teal;
+    font-size: 24px;
+}

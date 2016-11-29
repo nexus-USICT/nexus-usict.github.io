@@ -1,0 +1,41 @@
+{
+	"users" : {
+		"teachers" : {
+			"fKehdZWpFzeQn0t9DK8dCRaVOEE2" : {
+				"name" : "john doe",
+				"classes" : {
+					"0" : "btech cse 1",
+					"1" : "mtech cse 3",
+					"2" : "btech it 1" 
+				},
+				"assignments": {
+					"0" : {
+						"class" : "btech cse 1",
+						"link"	: "http",
+						"submissions" : {
+							"0" : "1214124",
+							"1" : "2423423"
+						}
+					}
+				}
+			}
+		},
+
+		"students" : {
+			"btech" : {
+				"cse"	:	{
+					"1"	:	{
+						"0" : {
+							"enroll" : "324324",
+							"name" : "Hemang"
+						},
+						"1" :{
+						"enroll" : "32434",
+						"name" : "battery"
+						}
+					}
+				}
+			}
+		}
+	}
+}

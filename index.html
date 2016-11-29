@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="login">
+<head>
+
+	<title>NEXUS USICT</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+
+</head>
+<script>
+  // Initialize Firebase
+var config = {
+    apiKey: "AIzaSyCRRtT3xXoNgIHfVHX_lZMnvoGFEZf8XQo",
+    authDomain: "nexus-ac4be.firebaseapp.com",
+    databaseURL: "https://nexus-ac4be.firebaseio.com",
+    storageBucket: "nexus-ac4be.appspot.com",
+    messagingSenderId: "728352725026"
+};
+
+firebase.initializeApp(config);
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+   
+    console.log(user);
+    console.log("Signed In");
+     window.location.href="http://localhost:8080/nexus/dashboard.html"
+  } else {
+    // No user is signed in.
+    console.log("Not signed In");
+  }
+});
+    
+</script>
+
+
+<body>
+	<main>
+		<ng-include src="'includes/header.html'"></ng-include>
+
+		<div class="container login-box drop-down-school">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="card">
+						<br>
+						<div class="vertical-line">
+							<div class="login-title">LOGIN</div>
+						</div>
+						<form name="loginForm" ng-controller="LoginController as lc" ng-submit="lc.getCredentials()">
+							<div class="container-fluid login-content" >
+								<div class="input-field col s12">
+									<input ng-model ="lc.credentials.username" id="login" type="text" class="validate">
+									<label for="login">Username</label>
+								</div>
+
+								<div class="input-field col s12">
+									<input ng-model="lc.credentials.password" id="pwd" type="password" class="validate">
+									<label for="pwd">Password</label>
+								</div>
+								<button class="submit-btn btn waves-effect waves-light right" type="submit" name="action">Submit
+									<i class="material-icons right">send</i>
+								</button>
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</main>             
+	
+
+		<ng-include src="'includes/footer.html'"></ng-include>
+	
+	<ng-include src="'includes/message_box.html'" scope="" onload=""></ng-include>
+</body>
+</html>

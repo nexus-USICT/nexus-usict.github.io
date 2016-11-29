@@ -1,0 +1,35 @@
+<div class="container" >
+			<div class="row">
+				<div class="data">
+				<table>
+				<thead>	<tr>
+					<th>
+					Date
+					</th>
+					<th>
+					Topic
+					</th>
+					</tr>
+
+				</thead>
+				
+				<tbody>
+				
+				<tr ng-repeat="param in date_array">
+					<td>{{param}}</td>
+					<td><input type="text" ng-model="dates[param]" name=""></td>
+				</tr>
+				</tbody>	
+				</table>
+
+				<div><button ng-click="date_post_json()" class="waves-effect btn ">SAVE CHANGES</button></div>
+				
+				</div>
+			</div>
+</div>
+
+<script>
+$(document).ready(function () {
+	
+})
+</script>

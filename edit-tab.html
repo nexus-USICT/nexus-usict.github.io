@@ -1,0 +1,41 @@
+<div class="container card profile-box">
+	<div class="row">
+			<div class="col-md-8">
+
+				<form>
+				<div class="row">	
+					<div class="input-field col s6">
+						<input ng-model="editProfileData.displayName" id="nameProfile" type="text" class="validate">
+						<label for="nameProfile">Name</label>
+					</div>
+
+					<div class="file-field input-field col s6">
+						<div class="btn">
+							<span>UPLOAD PICTURE</span>
+							<input class="myImg" type="file">
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text">
+						</div>
+					</div>
+
+
+					<button ng-click="updateProfile()" class=" btn waves-effect waves-light right" type="submit" name="action">Submit
+					<i class="material-icons right">send</i>
+				</button>
+				</div>
+				
+
+
+
+				</form>
+
+			</div>
+
+			<div class="col-md-4">
+			
+			</div>
+	</div>
+</div>
+
+
